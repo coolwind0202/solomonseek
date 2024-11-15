@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "solomonseek",
+  "description": "CIST Solomonのページめくりを自動化します",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "js": ["main.js"],
+      "matches": ["https://solomon.mc.chitose.ac.jp/ext_contents/*"],
+      "all_frames": true,
+      "world": "MAIN"
+    }
+  ]
+}
